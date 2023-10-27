@@ -176,10 +176,24 @@
                                             <action selector="done:" destination="gsy-Aq-LHf" eventType="touchUpInside" id="xBs-re-UpG"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8SL-nw-jAR">
+                                        <rect key="frame" x="297" y="12" width="30" height="25"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="30" id="tsz-pl-CUr"/>
+                                            <constraint firstAttribute="height" constant="25" id="yrq-qZ-WAR"/>
+                                        </constraints>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="xmark.circle.fill" catalog="system"/>
+                                        <connections>
+                                            <action selector="closeButton:" destination="gsy-Aq-LHf" eventType="touchUpInside" id="eGh-xa-iHZ"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="tertiarySystemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstItem="AqX-3V-fx7" firstAttribute="top" secondItem="36p-62-yiq" secondAttribute="bottom" constant="8" id="21f-7v-lPm"/>
+                                    <constraint firstItem="8SL-nw-jAR" firstAttribute="top" secondItem="zEh-dG-beK" secondAttribute="top" constant="12" id="2Da-2K-upt"/>
                                     <constraint firstAttribute="trailing" secondItem="AqX-3V-fx7" secondAttribute="trailing" constant="16" id="2sq-6m-1vc"/>
                                     <constraint firstItem="AqX-3V-fx7" firstAttribute="leading" secondItem="zEh-dG-beK" secondAttribute="leading" constant="16" id="3Ox-2t-RgN"/>
                                     <constraint firstItem="det-Uf-TpO" firstAttribute="top" secondItem="PzW-zM-aam" secondAttribute="bottom" constant="16" id="4Ic-Zj-csE"/>
@@ -202,6 +216,7 @@
                                     <constraint firstItem="36p-62-yiq" firstAttribute="leading" secondItem="zEh-dG-beK" secondAttribute="leading" constant="8" id="ZRE-Om-dDF"/>
                                     <constraint firstItem="vs2-QY-z1f" firstAttribute="top" secondItem="CjC-Wf-wnK" secondAttribute="bottom" constant="8" id="ZSb-4p-jLX"/>
                                     <constraint firstItem="ukk-Lb-5Eo" firstAttribute="top" secondItem="4Vp-th-7my" secondAttribute="bottom" constant="8" id="bQS-hj-NCR"/>
+                                    <constraint firstAttribute="trailing" secondItem="8SL-nw-jAR" secondAttribute="trailing" constant="16" id="bjE-4F-zVG"/>
                                     <constraint firstItem="36p-62-yiq" firstAttribute="top" secondItem="9yX-sH-oSI" secondAttribute="bottom" constant="16" id="ceU-Vn-ato"/>
                                     <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="det-Uf-TpO" secondAttribute="trailing" constant="20" symbolic="YES" id="d99-8z-3FA"/>
                                     <constraint firstItem="YJw-zA-Euz" firstAttribute="centerX" secondItem="zEh-dG-beK" secondAttribute="centerX" id="dpw-3T-kV1"/>
@@ -234,7 +249,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Sxl-P5-Jah" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2875.5725190839694" y="-2.1126760563380285"/>
+            <point key="canvasLocation" x="1933.5877862595419" y="-2.1126760563380285"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="gIJ-ph-vM8">
@@ -256,6 +271,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="xmark.circle.fill" catalog="system" width="128" height="123"/>
         <systemColor name="systemGray5Color">
             <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

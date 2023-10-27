@@ -19,4 +19,8 @@ class CustomAlertViewController: UIViewController {
         dismiss(animated: true)
     }
     
+    @IBAction func closeButton(_ sender: UIButton) {
+        dismiss(animated: true)
+    }
+    
 }
