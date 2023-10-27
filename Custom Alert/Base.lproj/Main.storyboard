@@ -27,15 +27,26 @@
                                     <action selector="showAlert:" destination="nDG-Xz-QdS" eventType="touchUpInside" id="uxi-Fi-gRs"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F92-Yi-UC7">
+                                <rect key="frame" x="175.66666666666666" y="367.66666666666669" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemGray5Color"/>
                         <constraints>
+                            <constraint firstItem="F92-Yi-UC7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Db0-F2-XFO"/>
+                            <constraint firstItem="dUP-qo-3Zn" firstAttribute="top" secondItem="F92-Yi-UC7" secondAttribute="bottom" constant="20" id="Pbn-fX-zwE"/>
                             <constraint firstItem="dUP-qo-3Zn" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Qcv-Gl-Lqd"/>
                             <constraint firstItem="dUP-qo-3Zn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xUn-mQ-79q"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Price Rules" id="58y-9P-ROl"/>
+                    <connections>
+                        <outlet property="userNameTX" destination="F92-Yi-UC7" id="rZR-ei-xfX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <exit id="nDG-Xz-QdS" userLabel="Exit" sceneMemberID="exit"/>
@@ -246,6 +257,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="0uf-2t-eCE"/>
+                    <connections>
+                        <outlet property="discountAmountLabel" destination="ukk-Lb-5Eo" id="XKX-3g-r1B"/>
+                        <outlet property="titleLabel" destination="PzW-zM-aam" id="oh2-IQ-mpt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Sxl-P5-Jah" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
